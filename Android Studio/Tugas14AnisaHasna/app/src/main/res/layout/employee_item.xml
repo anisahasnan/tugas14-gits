@@ -1,0 +1,73 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp">
+
+    <androidx.cardview.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/cv_employee"
+        android:layout_gravity="center"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        card_view:cardCornerRadius="5dp"
+        card_view:cardElevation="10dp"
+        android:layout_margin="5dp">
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".MainActivity"
+            android:paddingHorizontal="7dp"
+            android:paddingVertical="12dp">
+
+            <ImageView
+                android:id="@+id/image_employee"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/ic_person" />
+
+            <TextView
+                android:id="@+id/nama_employee"
+                style="@style/TextAppearance.AppCompat.Medium"
+                android:textSize="18dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:layout_toRightOf="@+id/image_employee"
+                android:hint="Nama Employee"
+                android:textStyle="bold"
+                android:paddingBottom="5dp" />
+
+            <TextView
+                android:id="@+id/email_employee"
+                style="@style/TextAppearance.AppCompat.Medium"
+                android:textSize="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:layout_below="@+id/nama_employee"
+                android:layout_toRightOf="@+id/image_employee"
+                android:hint="employee@gmail.com"
+                android:paddingBottom="5dp"/>
+
+            <TextView
+                android:id="@+id/division_employee"
+                style="@style/TextAppearance.AppCompat.Medium"
+                android:textSize="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/dark_blue"
+                android:layout_below="@+id/email_employee"
+                android:layout_toRightOf="@+id/image_employee"
+                android:hint="Product Manager"
+                android:textStyle="bold"/>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

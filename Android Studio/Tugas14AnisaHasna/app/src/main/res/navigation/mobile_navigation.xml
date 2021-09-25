@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.tugas14_anisahasna.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/navigation_listEmployee"
+        android:name="com.example.tugas14_anisahasna.ui.listEmployee.ListEmployeeFragment"
+        android:label="@string/title_listEmployee"
+        tools:layout="@layout/fragment_list_employee" />
+
+    <fragment
+        android:id="@+id/navigation_addEmployee"
+        android:name="com.example.tugas14_anisahasna.ui.addEmployee.AddEmployeeFragment"
+        android:label="@string/title_addEmployee"
+        tools:layout="@layout/fragment_add_employee" />
+</navigation>

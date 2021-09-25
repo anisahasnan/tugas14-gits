@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Tugas14-AnisaHasna</string>
+    <string name="title_activity_main2">MainActivity2</string>
+    <string name="title_home">Home</string>
+    <string name="title_listEmployee">List Employee</string>
+    <string name="title_addEmployee">Add Employee</string>
+    <string name="home_subtitle">- Melihat daftar employee\n- Melihat detail employee\n- Menambah employee\n- Mengubah informasi kontak employee\n- Menghapus employee</string>
+</resources>

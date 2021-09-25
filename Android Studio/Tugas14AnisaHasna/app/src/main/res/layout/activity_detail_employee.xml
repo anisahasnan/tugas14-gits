@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="360dp"
+        android:orientation="vertical"
+        android:background="@color/dark_blue">
+
+        <LinearLayout
+            android:id="@+id/row_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/row_address"
+            android:layout_marginTop="30dp">
+
+            <ImageView
+                android:id="@+id/btn_delete_employee"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/delete"
+                android:clickable="true"
+                android:focusable="true"
+                android:layout_marginLeft="20dp"/>
+
+            <ImageView
+                android:id="@+id/btn_update_employee"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/edit"
+                android:clickable="true"
+                android:focusable="true"
+                android:layout_gravity="right"
+                android:layout_marginLeft="318dp"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/image_employee"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/user"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"/>
+
+        <TextView
+            android:id="@+id/nama_employee"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nama Employee"
+            android:textSize="25dp"
+            android:textAlignment="center"
+            android:layout_marginTop="25dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/division_employee"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Divisi Employee"
+            android:textSize="18dp"
+            android:textAlignment="center"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:id="@+id/sex_employee"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="L/P"
+            android:textSize="18dp"
+            android:textAlignment="center"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/row_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/header"
+        android:paddingHorizontal="50dp"
+        android:layout_marginTop="30dp">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/email" />
+
+        <TextView
+            android:id="@+id/email_employee"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="employee@gmail.com"
+            android:textSize="18dp"
+            android:layout_marginLeft="20dp"
+            android:paddingTop="5dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/row_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/row_email"
+        android:paddingHorizontal="50dp"
+        android:layout_marginTop="15dp">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/phone" />
+
+        <TextView
+            android:id="@+id/phone_employee"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="081210665234"
+            android:textSize="18dp"
+            android:layout_marginLeft="20dp"
+            android:paddingTop="5dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/row_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/row_phone"
+        android:paddingHorizontal="50dp"
+        android:layout_marginTop="15dp">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/address" />
+
+        <TextView
+            android:id="@+id/address_employee"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Jl Palem Hijau No 15, Pejuang, Medan Pejuang, Jakarta Selatan 16025"
+            android:textSize="18dp"
+            android:layout_marginLeft="20dp"
+            android:paddingTop="5dp"/>
+
+    </LinearLayout>
+</RelativeLayout>
