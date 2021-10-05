@@ -4,7 +4,10 @@ include 'dbconfig.php';
  
 if($_SERVER['REQUEST_METHOD']=='POST'){
 
-	// Mendapatkan Nilai Variable
+	//Import File Koneksi database
+	// require_once('koneksi.php');
+
+	//Mendapatkan Nilai Variable
 	$name = $_POST['name'];
 	$sex = $_POST['sex'];
 	$email = $_POST['email'];
@@ -12,10 +15,16 @@ if($_SERVER['REQUEST_METHOD']=='POST'){
 	$address = $_POST['address'];
 	$division = $_POST['division'];
 
-	// Pembuatan Syntax SQL
+	//Pembuatan Syntax SQL
 	$sql = "INSERT INTO employee (name, sex, email, phone, address, division) VALUES ('$name','$sex','$email', '$phone', '$address', '$division')";
 
-	// Eksekusi Query database
+	// //Eksekusi Query database
+	// if(mysqli_query($con,$sql)){
+	// 	echo 'Berhasil Menambahkan Employee';
+	// }else{
+	// 	echo 'Gagal Menambahkan Employee';
+	// }
+
 	$query = mysqli_query($db, $sql);
     if ($query){
         $response["error"] = false;
@@ -34,4 +43,7 @@ else{
 
     echo json_encode($response);
 }
+
+// mysqli_close($con);
+// }
 ?>
