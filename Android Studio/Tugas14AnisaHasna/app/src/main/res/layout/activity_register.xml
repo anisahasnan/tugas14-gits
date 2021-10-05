@@ -1,18 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:orientation="vertical"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    tools:context=".ui.LoginActivity">
 
     <TextView
+        android:id="@+id/registerTitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Data Employee Baru"
-        android:textAlignment="center"
-        android:textSize="20dp"
+        android:text="Create Account\nto Get Started!"
+        android:textSize="40dp"
         android:textStyle="bold"
-        android:layout_marginTop="50dp"/>
+        android:textColor="@color/dark_blue"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="25dp"/>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -20,7 +23,8 @@
         android:orientation="vertical"
         android:layout_margin="8dp"
         android:layout_weight="1"
-        android:padding="20dp">
+        android:padding="20dp"
+        android:layout_below="@+id/registerTitle">
 
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
@@ -29,33 +33,9 @@
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Nama"
-                android:id="@+id/add_nama_employee"/>
+                android:hint="Username"
+                android:id="@+id/username"/>
         </com.google.android.material.textfield.TextInputLayout>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Jenis Kelamin" />
-
-        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:id="@+id/add_sex_employee"
-            android:layout_marginBottom="10dp">
-
-            <RadioButton android:id="@+id/add_sex_l_employee"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Laki-Laki"
-                android:layout_marginRight="20dp"/>
-            <RadioButton android:id="@+id/add_sex_p_employee"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Perempuan" />
-
-        </RadioGroup>
 
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
@@ -65,53 +45,55 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Email"
-                android:id="@+id/add_email_employee"/>
+                android:id="@+id/email"/>
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="20dp">
+            android:layout_marginBottom="20dp"
+            app:endIconMode="password_toggle">
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Phone"
-                android:id="@+id/add_phone_employee"/>
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:id="@+id/password"/>
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="20dp">
+            android:layout_marginBottom="20dp"
+            app:endIconMode="password_toggle">
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Address"
-                android:id="@+id/add_address_employee"/>
-        </com.google.android.material.textfield.TextInputLayout>
-
-        <com.google.android.material.textfield.TextInputLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="20dp">
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="Division"
-                android:id="@+id/add_division_employee"/>
+                android:hint="Confirm Password"
+                android:inputType="textPassword"
+                android:id="@+id/confirm_password"/>
         </com.google.android.material.textfield.TextInputLayout>
 
         <Button
             android:layout_width="120dp"
             android:layout_height="wrap_content"
-            android:id="@+id/btn_submit_add_employee"
+            android:id="@+id/btn_register"
             android:background="@color/dark_blue"
-            android:text="Simpan"
+            android:text="Register"
             android:textColor="@android:color/white"
             android:textSize="15dp"
             android:layout_gravity="center"
             android:layout_marginTop="30dp"/>
 
+        <TextView
+            android:id="@+id/btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/login"
+            android:textAlignment="center"
+            android:textSize="16dp"
+            android:layout_marginTop="30dp"/>
+
     </LinearLayout>
 
-</LinearLayout>
+</RelativeLayout>

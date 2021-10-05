@@ -1,7 +1,15 @@
 package com.example.tugas14_anisahasna;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.TextView;
+import android.widget.Toast;
 
+import com.example.tugas14_anisahasna.helper.SharedPref;
+import com.example.tugas14_anisahasna.ui.LoginActivity;
+import com.example.tugas14_anisahasna.ui.RegisterActivity;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -15,6 +23,8 @@ import com.example.tugas14_anisahasna.databinding.ActivityMainBinding;
 public class MainActivity extends AppCompatActivity {
 
     private ActivityMainBinding binding;
+    TextView username;
+    Button btnLogout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

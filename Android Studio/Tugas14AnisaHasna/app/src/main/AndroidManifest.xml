@@ -3,6 +3,7 @@
     package="com.example.tugas14_anisahasna">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE" />
 
     <application
         android:allowBackup="true"
@@ -13,6 +14,24 @@
         android:theme="@style/Theme.Tugas14AnisaHasna"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".ui.SplashScreenActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.OnBoardingActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.RegisterActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.LoginActivity"
+            android:exported="true" />
+        <activity
             android:name=".UpdateEmployeeActivity"
             android:exported="true" />
         <activity
@@ -21,11 +40,6 @@
         <activity
             android:name=".MainActivity"
             android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
     </application>
 

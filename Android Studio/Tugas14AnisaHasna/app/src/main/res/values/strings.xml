@@ -4,5 +4,13 @@
     <string name="title_home">Home</string>
     <string name="title_listEmployee">List Employee</string>
     <string name="title_addEmployee">Add Employee</string>
+    <string name="login">Sudah memiliki akun?  <font fgcolor='#1c2e4a'><b><u>Login</u></b></font></string>
+    <string name="register">Belum memiliki akun?  <font fgcolor='#1c2e4a'><b><u>Register</u></b></font></string>
     <string name="home_subtitle">- Melihat daftar employee\n- Melihat detail employee\n- Menambah employee\n- Mengubah informasi kontak employee\n- Menghapus employee</string>
+    <string name="onboard_title1">Temukan Kontak\nRekanmu</string>
+    <string name="onboard_title2">Tambah Kontak\nRekanmu</string>
+    <string name="onboard_title3">Hapus Kontak\nRekanmu</string>
+    <string name="onboard_subtitle1">Kamu dapat menemukan kontak rekan kerja mu disini,mulai dari nomor telepon, email, hingga alamat</string>
+    <string name="onboard_subtitle2">Tidak menemukan kontak mu atau ingin menambah kontak temanmu? Kamu bisa melakuannya disini</string>
+    <string name="onboard_subtitle3">Menemukan kontak rekan yang sudah tidak bekerja lagi? Kamu dapat menghapus kontak tersebut disini</string>
 </resources>

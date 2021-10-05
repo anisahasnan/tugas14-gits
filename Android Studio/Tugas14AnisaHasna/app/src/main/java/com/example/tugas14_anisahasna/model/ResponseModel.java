@@ -7,11 +7,14 @@ public class ResponseModel {
     @SerializedName("message")
     private String message;
 
-    @SerializedName("id")
-    private String id;
+    @SerializedName("idUser")
+    private String idUser;
 
     @SerializedName("error")
     private boolean error;
+
+    @SerializedName("username")
+    private String username;
 
     public String getMessage() {
         return message;
@@ -21,12 +24,12 @@ public class ResponseModel {
         this.message = message;
     }
 
-    public String getId() {
-        return id;
+    public String getIdUser() {
+        return idUser;
     }
 
-    public void setId(String id) {
-        this.id = id;
+    public void setIdUser(String idUser) {
+        this.idUser = idUser;
     }
 
     public boolean isError() {
@@ -35,5 +38,13 @@ public class ResponseModel {
 
     public void setError(boolean error) {
         this.error = error;
+    }
+
+    public String getUsername() {
+        return username;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
     }
 }

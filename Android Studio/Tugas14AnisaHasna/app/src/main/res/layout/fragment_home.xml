@@ -6,56 +6,99 @@
     android:layout_height="match_parent"
     tools:context=".ui.home.HomeFragment">
 
-    <ImageView
-        android:id="@+id/logoHome"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_centerHorizontal="true"
-        android:src="@drawable/logo"
-        android:layout_marginTop="60dp"
-        android:layout_marginBottom="20dp"/>
+    <com.smarteist.autoimageslider.SliderView
+        android:id="@+id/imageSlider"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        app:sliderAnimationDuration="600"
+        app:sliderAutoCycleDirection="back_and_forth"
+        app:sliderAutoCycleEnabled="true"
+        app:sliderIndicatorAnimationDuration="600"
+        app:sliderIndicatorGravity="center_horizontal|bottom"
+        app:sliderIndicatorMargin="15dp"
+        app:sliderIndicatorOrientation="horizontal"
+        app:sliderIndicatorPadding="3dp"
+        app:sliderIndicatorRadius="2dp"
+        app:sliderIndicatorSelectedColor="#5A5A5A"
+        app:sliderIndicatorUnselectedColor="#FFF"
+        app:sliderScrollTimeInSec="1"
+        app:sliderStartAutoCycle="true" />
+
+<!--    <ImageView-->
+<!--        android:id="@+id/logoHome"-->
+<!--        android:layout_width="50dp"-->
+<!--        android:layout_height="50dp"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:src="@drawable/logo"-->
+<!--        android:layout_marginTop="60dp"-->
+<!--        android:layout_marginBottom="20dp"-->
+<!--        android:layout_below="@+id/imageSlider"/>-->
 
     <TextView
         android:id="@+id/homeTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
+        android:textSize="25dp"
+        android:textColor="@color/dark_blue"
+        android:text="Selamat Datang di Emply,"
+        android:layout_below="@+id/imageSlider"
+        android:layout_marginTop="40dp"/>
+
+<!--    <TextView-->
+<!--        android:id="@+id/subtitleHome1"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_marginTop="30dp"-->
+<!--        android:layout_below="@+id/homeTitle"-->
+<!--        android:textStyle="bold"-->
+<!--        android:textSize="20dp"-->
+<!--        android:text="Dengan Emply, Anda dapat :" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/answer_subtitleHome1"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:layout_below="@+id/subtitleHome1"-->
+<!--        android:textSize="18dp"-->
+<!--        android:textAlignment="center"-->
+<!--        android:text="@string/home_subtitle" />-->
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
         android:textStyle="bold"
         android:textSize="25dp"
         android:textColor="@color/dark_blue"
-        android:text="Selamat Datang di Emply!"
-        android:layout_below="@+id/logoHome"/>
-
-    <TextView
-        android:id="@+id/subtitleHome1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="30dp"
+        android:hint="username!"
         android:layout_below="@+id/homeTitle"
-        android:textStyle="bold"
-        android:textSize="20dp"
-        android:text="Dengan Emply, Anda dapat :" />
+        android:layout_marginTop="10dp" />
 
-    <TextView
-        android:id="@+id/answer_subtitleHome1"
-        android:layout_width="wrap_content"
+    <Button
+        android:layout_width="100dp"
         android:layout_height="wrap_content"
+        android:id="@+id/btn_logout"
+        android:background="@color/dark_blue"
+        android:text="Logout"
+        android:textColor="@android:color/white"
+        android:textSize="12dp"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp"
-        android:layout_below="@+id/subtitleHome1"
-        android:textSize="18dp"
-        android:textAlignment="center"
-        android:text="@string/home_subtitle" />
+        android:layout_marginTop="70dp"
+        android:layout_below="@+id/username"/>
 
-    <ImageView
-        android:id="@+id/headerHome"
-        android:layout_width="350dp"
-        android:layout_height="200dp"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="50dp"
-        android:src="@drawable/welcome"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="60dp"/>
+<!--    <ImageView-->
+<!--        android:id="@+id/headerHome"-->
+<!--        android:layout_width="350dp"-->
+<!--        android:layout_height="200dp"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_marginTop="50dp"-->
+<!--        android:src="@drawable/welcome"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:layout_marginBottom="60dp"/>-->
 
 </RelativeLayout>

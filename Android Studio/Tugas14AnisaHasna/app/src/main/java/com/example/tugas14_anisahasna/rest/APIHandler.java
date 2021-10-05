@@ -15,6 +15,17 @@ import retrofit2.http.Query;
 
 public interface APIHandler {
 
+    @FormUrlEncoded
+    @POST("login.php")
+    Call<ResponseModel> login(@Field("username") String username,
+                              @Field("password") String password);
+
+    @FormUrlEncoded
+    @POST("register.php")
+    Call<ResponseModel> register(@Field("username") String username,
+                                 @Field("email") String email,
+                                 @Field("password") String password);
+
     @GET("viewAllEmployee.php")
     Call<List<EmployeeModel>> getAllEmployee();
 
